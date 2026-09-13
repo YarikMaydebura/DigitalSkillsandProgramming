@@ -1,0 +1,37 @@
+Answers Assignment 3
+
+4. 
+1. CPU
+Model: Apple M3 (Mac15,12, MacBook Air)
+Cores: 8 total 4 performance + 4 efficiency
+Speed: performance cores up to ~4.05 GHz, efficiency cores ~2.75 GHz
+
+2. RAM
+Type: LPDDR5 
+Amount: 16 GB 
+Speed: ~6400 MT/s, ~100 GB/s memory bandwidth
+Memory is not removable 
+
+3. GPU
+Model: Apple M3 integrated GPU, 10 cores, built-in bus
+VRAM does not have
+The GPU uses the same 16 GB unified memory pool as the CPU.
+Metal support: Metal 4
+
+4. Firmware
+System Firmware Version: 18000.161.10
+OS Loader Version: 18000.161.10
+
+Last Update was 2 days ago 
+
+5. Apple silicon does not have BIOS or UEFI setup screen. Boot is handlade by iBOOT which load from other SSD. It possible to do to hold the power button when starting MAC. And from USB it possible only from limited way. 
+
+Current setting on this machine: 
+
+6. Resolution is 2560 x 1664
+
+main differentce that it start to use a letss amount of pixels or more acurate say that we combine some of the pixels to make resolution in x and y axis as 800 pixels and 600 pixels. 
+
+And we just changing the grid of the pixels and change their cordinate on the screen. 
+
+7. 

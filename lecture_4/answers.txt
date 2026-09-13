@@ -1,0 +1,30 @@
+Answers DSPI 4031DISKP, Operating System Fundamentals
+
+Maydebura Yaroslav
+s5051487
+
+
+This assignment was done by MacOs sothats why some of the assignment part was done not exatly by instructions because for example driver.sh does not work. Due to fact that it require Kernel linux moduls but mac does not have it so i used Kmurtil comand.
+
+5. my device have aproxsimatly around 250 driver moduls from it I have 3 wifi drivers such as:
+Wifi:
+  com.apple.driver.AppleBCMWLANCore (v1.0.0)
+  /System/Library/Extensions/AppleBCMWLANCore.kext/
+
+  Supporting extensions:
+  com.apple.iokit.IO80211Family (v1200.13.1)
+
+Network:
+  com.apple.iokit.IONetworkingFamily (v3.4)
+  /System/Library/Extensions/IONetworkingFamily.kext/
+  com.apple.iokit.IOUserEthernet (v1.0.1) 
+  com.apple.driver.usb.networking (v5.0.0) 
+  com.apple.driver.AppleUSBDeviceNCM (v5.0.0) 
+6.1
+Brouser google Chrome 
+open 15 tabs 
+usage memory 532.8mb
+cpu 0.9 %
+6.2 
+This is the path for the my Google chrome app
+/Applications/Google Chrome.app/Contents/MacOS/Google Chrome

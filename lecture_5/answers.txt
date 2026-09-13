@@ -1,0 +1,76 @@
+Answers Assignment 5
+
+1. My Ip by internet request curl ifconfig.me is : 212.222.202.191%
+
+My local Ip is: 	
+
+		inet 127.0.0.1 netmask 0xff000000
+	inet 10.146.206.230 netmask 0xfffff000 broadcast 10.146.207.255
+default            10.146.192.1       UGScg                 en0    
+
+2. After I turn on VPN my local didnt changed but it create a user spacetunel 
+
+	inet 127.0.0.1 netmask 0xff000000
+	inet 10.146.206.230 netmask 0xfffff000 broadcast 10.146.207.255
+	inet 145.138.226.8 --> 145.138.226.8 netmask 0xffffffc0
+default            10.146.192.1       UGScg                 en0       
+default            link#21            UCSIg               utun6  
+
+And if I use the internet request then it become this: 212.222.202.191% so it keep same one
+Maybe it does not change due to fact that tunel which eduvpn create is using for the educantional materials such as library asnd so on. Biut system still using the normal local network to acces to the external general internet. 
+
+3. This is my adresses 
+10.146.206.230 (en0 address)
+10.146.192.1 (gateway)
+212.222.202.191 (from ifconfig.me)
+
+4. This waht I get after cheking my Adress
+"ip": "212.222.202.191",
+  "city": "Leiden",
+  "region": "South Holland",
+  "country": "NL",
+  "loc": "52.1608,4.4934",
+  "org": "AS3257 GTT Communications Inc.",
+  "postal": "2312",
+  "timezone": "Europe/Amsterdam",
+  "readme": "https://ipinfo.io/missingauth"
+This is the real location where I am right now 
+
+5. 
+
+maydeburayaroslav@MacBook-Air ~ % traceroute google.nl
+traceroute to google.nl (192.178.24.131), 64 hops max, 40 byte packets
+ 1  10.146.192.1 (10.146.192.1)  8.119 ms  6.891 ms  5.904 ms
+ 2  212.222.202.145 (212.222.202.145)  5.535 ms  8.537 ms  6.045 ms
+ 3  xe-1-3-0-3261.cr1-ams3.ip4.gtt.net (212.222.130.253)  7.266 ms  10.403 ms  6.154 ms
+ 4  ae0.cr5-ams2.ip4.gtt.net (141.136.111.110)  5.892 ms  6.426 ms  5.757 ms
+ 5  142.251.202.252 (142.251.202.252)  6.280 ms  6.498 ms *
+ 6  74.125.242.187 (74.125.242.187)  12.564 ms
+    74.125.243.133 (74.125.243.133)  7.245 ms
+    74.125.242.187 (74.125.242.187)  6.709 ms
+ 7  209.85.245.53 (209.85.245.53)  10.124 ms  7.152 ms
+    209.85.242.177 (209.85.242.177)  6.567 ms
+ 8  tzamsa-aw-in-f3.1e100.net (192.178.24.131)  7.180 ms  6.483 ms  6.230 ms
+
+
+This si all of the hops I get in general 8 
+First hop it is my gateway so it mean request starts from my device.
+Last hop it is the destination place it is a google servers which is my destination of the requrest and it took around 6 ms to get packages to it 
+
+6. 
+
+The location of the last hop is:
+
+"ip": "192.178.24.131",
+  "hostname": "tzamsa-aw-in-f3.1e100.net",
+  "city": "Mountain View",
+  "region": "California",
+  "country": "US",
+  "loc": "38.0088,-122.1175",
+  "org": "AS15169 Google LLC",
+  "postal": "94043",
+  "timezone": "America/Los_Angeles",
+  "readme": "https://ipinfo.io/missingauth"
+
+So servers locate in Los_Angeles
+
